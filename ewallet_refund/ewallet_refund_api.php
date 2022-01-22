@@ -1,0 +1,112 @@
+<?php
+//商店代號
+$uid = $_POST['UID_'];
+$version=$_POST['Version_'];
+$respond_type=$_POST['RespondType_'];
+$key = $_POST['key'];
+$iv = $_POST['iv'];
+$url = $_POST['url'];
+unset($_POST['key'], $_POST['iv'], $_POST['url'],$_POST['UID_'],$_POST['Version_'],$_POST['RespondType_']);
+
+$data1 = json_encode($_POST);
+
+$edata1 = bin2hex(openssl_encrypt($data1, "AES-256-CBC", $key, OPENSSL_RAW_DATA, $iv));
+
+$hashs = "HashKey=" . $key . "&" . $edata1 . "&HashIV=" . $iv;
+
+$hash = strtoupper(hash("sha256", $hashs));
+
+//組成POST資料
+$post_str = [
+    'UID_' => $uid,
+    'Version_' => $version,
+    'EncyptData_' => $edata1,
+    'RespondType_' => $respond_type,
+    'HashData_' => $hash
+];
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API 參數轉換</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>程式範例：</legend>
+        <pre>
+//商店資訊
+$uid = $_POST['UID_'];
+$version=$_POST['Version_'];
+$respond_type=$_POST['RespondType_'];
+$key = $_POST['key'];
+$iv = $_POST['iv'];
+$url = $_POST['url'];
+
+//生成請求字串
+unset($_POST['key'], $_POST['iv'], $_POST['url'],$_POST['UID_'],$_POST['Version_'],$_POST['RespondType_']);
+$data1 = json_encode($_POST);
+
+//將請求字串加密
+$edata1=bin2hex(openssl_encrypt($data1, "AES-256-CBC", $key, OPENSSL_RAW_DATA, $iv));
+
+//壓碼
+$hashs="HashKey=".$key."&".$edata1."&HashIV=".$iv;
+$hash=strtoupper(hash("sha256",$hashs));
+
+//組成POST資料
+$post_str = [
+    'UID_' => $uid,
+    'Version_' => $version,
+    'EncyptData_' => $edata1,
+    'RespondType_' => $respond_type,
+    'HashData_' => $hash
+];
+    </pre>
+    </fieldset>
+    <form action="ewallet_refund.php" method="post">
+        <fieldset>
+            <legend>表格範例</legend>
+            <table>
+                <tr>
+                    <td>API網址：</td>
+                    <td><input name="url" value="<?=$url;?>" size="60" required></td>
+                </tr>
+                <tr>
+                    <td>商店代號: </td>
+                    <td><input name="UID_" value="<?= $uid; ?>" readonly></td>
+                </tr>
+                <tr>
+                    <td>串接程式版本: </td>
+                    <td><input name="Version_" value="<?= $version; ?>" readonly></td>
+                </tr>
+                <tr>
+                    <td>回傳格式: </td>
+                    <td><input name="RespondType_" value="<?= $respond_type; ?>" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="2">加密資料:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="EncryptData_" cols="100" rows="3"><?= $edata1; ?></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">雜湊資料:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="HashData_" cols="100" rows="2"><?= $hash; ?></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type=submit value="交易測試"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <a href="ewallet_refund_example.php">回本頁</a>
+</body>
+
+</html>
