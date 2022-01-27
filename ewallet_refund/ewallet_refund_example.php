@@ -60,7 +60,7 @@
             </table>
         </fieldset>
     </form>
-    <a href="../">回上一頁</a>
+
 </body>
 
 </html>

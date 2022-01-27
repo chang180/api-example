@@ -41,7 +41,7 @@
                             </tr>
                             <tr>
                                 <td>版本號:</td>
-                                <td><input name="Version" value="1.1" maxlength="3" readonly><span style="color:red;">※必填</span></td>
+                                <td><input name="Version" value="1.1" maxlength="3"><span style="color:red;">※必填</span></td>
                             </tr>
                             <tr>
                                 <td>TimeStamp:</td>
@@ -134,7 +134,7 @@
                             </tr>
                             <tr>
                                 <td>版本號:</td>
-                                <td><input name="Version" value="1.1" maxlength="3" readonly><span style="color:red;">※必填</span></td>
+                                <td><input name="Version" value="1.1" maxlength="3"><span style="color:red;">※必填</span></td>
                             </tr>
                             <tr>
                                 <td>TimeStamp:</td>
@@ -243,7 +243,7 @@
                             </tr>
                             <tr>
                                 <td>版本號:</td>
-                                <td><input name="Version" value="1.1" maxlength="3" readonly><span style="color:red;">※必填</span></td>
+                                <td><input name="Version" value="1.1" maxlength="3"><span style="color:red;">※必填</span></td>
                             </tr>
                             <tr>
                                 <td>TimeStamp:</td>
@@ -276,6 +276,13 @@
                             <tr>
                                 <td>付款人電子信箱:</td>
                                 <td><input name="PayerEmail" type="email" value="" maxlength="50" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple Pay payment token:</td>
+                                <td><textarea name="APPLEGPAY" cols="30" rows="10"></textarea><span style="color:red;">※Samsung Pay必填項目</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center"><input type="submit" value="參數轉換"></td>
                             </tr>
                             <tr>
                                 <td colspan="2" align="center"><input type="submit" value="參數轉換"></td>
@@ -316,7 +323,7 @@
                             </tr>
                             <tr>
                                 <td>版本號:</td>
-                                <td><input name="Version" value="1.1" maxlength="3" readonly><span style="color:red;">※必填</span></td>
+                                <td><input name="Version" value="1.1" maxlength="3"><span style="color:red;">※必填</span></td>
                             </tr>
                             <tr>
                                 <td>TimeStamp:</td>
@@ -393,7 +400,7 @@
                             </tr>
                             <tr>
                                 <td>版本號:</td>
-                                <td><input name="Version" value="1.1" maxlength="3" readonly><span style="color:red;">※必填</span></td>
+                                <td><input name="Version" value="1.1" maxlength="3"><span style="color:red;">※必填</span></td>
                             </tr>
                             <tr>
                                 <td>TimeStamp:</td>
@@ -439,7 +446,7 @@
                 </form>
         </li>
     </ul>
-<a href="../">回上一頁</a>    
+    
 </body>
 
 <script>

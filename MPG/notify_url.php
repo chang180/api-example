@@ -5,11 +5,11 @@ $key = ''; //請輸入key
 $iv = ''; //請輸入iv
 
 $trade_info=create_aes_decrypt($parameter,$key,$iv);
-$data = json_decode($trade_info, true);
+// $data = json_decode($trade_info, true);
 
 $log="log";
 $file=fopen($log, 'w');
-file_put_contents($log, $data);
+file_put_contents($log, $trade_info);
 fclose($file);
 
 //交易資料經 AES 解密後取得 TradeInfo

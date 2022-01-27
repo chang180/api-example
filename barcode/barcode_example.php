@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td>串接版本:</td>
-                    <td><input name="Version" value="1.0" maxlength="3" readonly><span style="color:red;">※必填</span></td>
+                    <td><input name="Version" value="1.0" maxlength="3"><span style="color:red;">※必填</span></td>
                 </tr>
                 <tr>
                     <td>時間戳記:</td>
@@ -73,7 +73,6 @@
             </table>
         </fieldset>
     </form>
-    <a href="../">回上一頁</a>
 </body>
 
 </html>

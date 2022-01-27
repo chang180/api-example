@@ -75,7 +75,7 @@ $hash=strtoupper(hash("sha256",$hashs));
                 </tr>
                 <tr>
                     <td>版本號:</td>
-                    <td><input name="Version" value="<?= $_POST['Version']; ?>" readonly></td>
+                    <td><input name="Version" value="<?= $_POST['Version']; ?>"></td>
                 </tr>
                 <tr>
                     <td>加密模式:</td>

@@ -34,7 +34,7 @@ $post_str = [
         <legend>程式範例：</legend>
         <pre>
 //商店資訊
-$mid = $_POST['MerchantID'];
+$mid = $_POST['MerchantID_'];
 $key = $_POST['key'];
 $iv = $_POST['iv'];
 
@@ -48,12 +48,6 @@ $edata1=bin2hex(openssl_encrypt($data1, "AES-256-CBC", $key, OPENSSL_RAW_DATA, $
 //壓碼
 $hashs="HashKey=".$key."&".$edata1."&HashIV=".$iv;
 $hash=strtoupper(hash("sha256",$hashs));
-
-//組成POST資料
-$post_str = [
-    'MerchantID_' => $merchant_ID,
-    'PostData_' => $encrypt_str
-];
     </pre>
     </fieldset>
     <form action="creditcard_close.php" method="post">

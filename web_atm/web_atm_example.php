@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td>版本號:</td>
-                    <td><input name="Version" value="1.1" maxlength="3" readonly><span style="color:red;">※必填</span></td>
+                    <td><input name="Version" value="1.1" maxlength="3"><span style="color:red;">※必填</span></td>
                 </tr>
                 <tr>
                     <td>TimeStamp:</td>
@@ -77,7 +77,6 @@
             </table>
         </fieldset>
     </form>
-    <a href="../">回上一頁</a>
 </body>
 
 </html>

@@ -38,7 +38,7 @@
                                 </tr>
                                 <tr>
                                     <td>串接程式版本:</td>
-                                    <td><input name="Version" value="1.1" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td><input name="Version" value="1.1" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>語系(選填):</td>
@@ -154,7 +154,7 @@
                                 </tr>
                                 <tr>
                                     <td>串接程式版本:</td>
-                                    <td><input name="Version" value="1.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td><input name="Version" value="1.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>時間戮記:</td>
@@ -210,7 +210,7 @@
                                 </tr>
                                 <tr>
                                     <td>串接程式版本:</td>
-                                    <td><input name="Version" value="1.1" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td><input name="Version" value="1.1" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>時間戮記:</td>
@@ -258,7 +258,7 @@
             </li>
         </ul>
     </div>
-    <a href="../">回上一頁</a>
+
 </body>
 <script>
     document.addEventListener('click', function(e) {

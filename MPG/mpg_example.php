@@ -13,7 +13,7 @@
         <h1>MPG API 範例</h1>
         <ul>
             <li>
-                <a href="#" class="payment">信用卡一次付清</a>
+                <a href="###" class="payment">信用卡一次付清</a>
                 <div class="payment-content" hidden>
                     <!-- 信用卡一次付清 -->
                     <form action="mpg_api.php" method="post">
@@ -37,8 +37,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -101,7 +101,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">信用卡紅利折抵</a>
+                <a href="###" class="payment">信用卡紅利折抵</a>
                 <div class="payment-content" hidden>
                     <!-- 信用卡紅利折抵 -->
                     <form action="mpg_api.php" method="post">
@@ -125,8 +125,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -189,7 +189,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">信用卡分期付款</a>
+                <a href="###" class="payment">信用卡分期付款</a>
                 <div class="payment-content" hidden>
                     <!-- 信用卡分期付款 -->
                     <form action="mpg_api.php" method="post">
@@ -213,8 +213,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -277,7 +277,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">銀聯卡交易</a>
+                <a href="###" class="payment">銀聯卡交易</a>
                 <div class="payment-content" hidden>
                     <!-- 銀聯卡交易 -->
                     <form action="mpg_api.php" method="post">
@@ -301,8 +301,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -365,7 +365,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">Google Pay交易</a>
+                <a href="###" class="payment">Google Pay交易</a>
                 <div class="payment-content" hidden>
                     <!-- Google Pay交易 -->
                     <form action="mpg_api.php" method="post">
@@ -389,8 +389,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -453,7 +453,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">Samsung Pay交易</a>
+                <a href="###" class="payment">Samsung Pay交易</a>
                 <div class="payment-content" hidden>
                     <!-- Samsung Pay交易 -->
                     <form action="mpg_api.php" method="post">
@@ -477,8 +477,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -541,7 +541,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">國民旅遊卡</a>
+                <a href="###" class="payment">國民旅遊卡</a>
                 <div class="payment-content" hidden>
                     <!-- 國民旅遊卡 -->
                     <form action="mpg_api.php" method="post">
@@ -565,8 +565,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -645,7 +645,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">WebATM交易</a>
+                <a href="###" class="payment">WebATM交易</a>
                 <div class="payment-content" hidden>
                     <!-- WebATM交易 -->
                     <form action="mpg_api.php" method="post">
@@ -669,8 +669,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -733,7 +733,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">超商代碼繳費</a>
+                <a href="###" class="payment">超商代碼繳費</a>
                 <div class="payment-content" hidden>
                     <!-- 超商代碼繳費 -->
                     <form action="mpg_api.php" method="post">
@@ -757,8 +757,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -821,7 +821,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">超商條碼繳費交易</a>
+                <a href="###" class="payment">超商條碼繳費交易</a>
                 <div class="payment-content" hidden>
                     <!-- 超商條碼繳費交易 -->
                     <form action="mpg_api.php" method="post">
@@ -845,8 +845,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -909,7 +909,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">跨境支付(Alipay/Wechat)</a>
+                <a href="###" class="payment">跨境支付(Alipay/Wechat)</a>
                 <div class="payment-content" hidden>
                     <!-- 跨境支付(Alipay/Wechat) -->
                     <form action="mpg_api.php" method="post">
@@ -933,8 +933,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -1001,7 +1001,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">簡單付電子錢包</a>
+                <a href="###" class="payment">簡單付電子錢包</a>
                 <div class="payment-content" hidden>
                     <!-- 簡單付電子錢包 -->
                     <form action="mpg_api.php" method="post">
@@ -1025,8 +1025,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -1089,7 +1089,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">LINE Pay 交易</a>
+                <a href="###" class="payment">LINE Pay 交易</a>
                 <div class="payment-content" hidden>
                     <!-- LINE Pay 交易 -->
                     <form action="mpg_api.php" method="post">
@@ -1113,8 +1113,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -1177,7 +1177,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">玉山Wallet 交易</a>
+                <a href="###" class="payment">玉山Wallet 交易</a>
                 <div class="payment-content" hidden>
                     <!-- 玉山Wallet 交易 -->
                     <form action="mpg_api.php" method="post">
@@ -1201,8 +1201,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -1265,7 +1265,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">台灣Pay 支付交易</a>
+                <a href="###" class="payment">台灣Pay 支付交易</a>
                 <div class="payment-content" hidden>
                     <!-- 台灣Pay 支付交易 -->
                     <form action="mpg_api.php" method="post">
@@ -1289,8 +1289,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -1353,7 +1353,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">超商取貨付款交易流程（含B2C大宗寄倉物流）</a>
+                <a href="###" class="payment">超商取貨付款交易流程（含B2C大宗寄倉物流）</a>
                 <div class="payment-content" hidden>
                     <!-- 超商取貨付款交易流程（含B2C大宗寄倉物流） -->
                     <form action="mpg_api.php" method="post">
@@ -1377,8 +1377,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -1449,7 +1449,7 @@
                 </div>
             </li>
             <li>
-                <a href="#" class="payment">不指定支付方式(依設定)</a>
+                <a href="###" class="payment">不指定支付方式(依設定)</a>
                 <div class="payment-content" hidden>
                     <!-- 不指定支付方式(依設定) -->
                     <form action="mpg_api.php" method="post">
@@ -1473,8 +1473,8 @@
                                     <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
-                                    <td>版本號:</td>
-                                    <td><input name="Version" value="2.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>
@@ -1534,12 +1534,11 @@
             </li>
         </ul>
     </div>
-    <a href="../">回上一頁</a>
 </body>
 <script>
     document.addEventListener('click', function(e) {
         if (e.target.className == 'payment') {
-            e.target.nextElementSibling.hidden = !e.target.nextElementSibling.hidden;
+            e.target.nextElementSibling.hidden = !e.target.nextElementSibling.hidden
         }
     });
 </script>

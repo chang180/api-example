@@ -1,5 +1,5 @@
 <?php
-//商店代號
+//商店資訊
 $mid = $_POST['MerchantID_'];
 $key = $_POST['key'];
 $iv = $_POST['iv'];
@@ -64,7 +64,7 @@ $post_str = [
             <table>
                 <tr>
                     <td>API網址：</td>
-                    <td><input name="url" value="https://ccore.newebpay.com/API/CreditCard" size="60" required></td>
+                    <td><input name="url" value="<?= $url; ?>" size="60" required></td>
                 </tr>
                 <tr>
                     <td>商店代號: </td>

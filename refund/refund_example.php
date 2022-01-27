@@ -32,7 +32,7 @@
                 </tr>
                 <tr>
                     <td>串接程式版本:</td>
-                    <td><input name="Version" value="1.0" maxlength="5" readonly><span style="color:red;">※必填</span></td>
+                    <td><input name="Version" value="1.0" maxlength="5"><span style="color:red;">※必填</span></td>
                 </tr>
                 <tr>
                     <td>買方金融機構帳號:</td>
@@ -80,7 +80,6 @@
             </table>
         </fieldset>
     </form>
-    <a href="../">回上一頁</a>
 
 </body>
 

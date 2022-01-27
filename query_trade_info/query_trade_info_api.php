@@ -56,7 +56,7 @@ $hash = strtoupper(hash("sha256", $hashs));
                 </tr>
                 <tr>
                     <td>串接程式版本: </td>
-                    <td><input name="Version" value="<?= $_POST['Version']; ?>" readonly></td>
+                    <td><input name="Version" value="<?= $_POST['Version']; ?>"></td>
                 </tr>
                 <tr>
                     <td>回傳格式: </td>
