@@ -11,7 +11,7 @@ $post_str = [
 
 // curl 結果
 $result = curl_(http_build_query($post_str), $api_url);
-$result = json_decode($result['web_info'], true);
+$result = json_decode($result['web_info'], true)??$result;
 ?>
 <!DOCTYPE html>
 <html lang="en">
