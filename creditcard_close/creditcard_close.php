@@ -33,7 +33,6 @@ $api_url = $_POST['url'];
 $post_str = [
     'MerchantID_' => $_POST['MerchantID_'],
     'PostData_' => $_POST['PostData_'],
-    'Pos_' => $_POST['Pos_']
 ];
 
 // curl 結果

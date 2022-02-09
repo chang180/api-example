@@ -10,6 +10,7 @@
 |/creditcard_pay_page   |嵌入式支付頁|
 |/cvs                   |超商代碼繳費-幕後取號串接|
 |/ewallet_refund        |電子錢包退款|
+|/linepay_refund        |網路商店 LINE Pay 退款|
 |/get_transaction_info  |單日交易查詢|
 |/MPG                   |多功能收款 MPG|
 |/period                |信用卡-定期定額|

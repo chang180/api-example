@@ -4,12 +4,14 @@ $parameter = $_POST['TradeInfo'];
 $key = ''; //請輸入key
 $iv = ''; //請輸入iv
 
-$trade_info=create_aes_decrypt($parameter,$key,$iv);
-// $data = json_decode($trade_info, true);
+$trade_info = create_aes_decrypt($parameter, $key, $iv);
+$encrypt_data = $trade_info['EncryptData'];
+$str = gzdecode($encrypt_data);
 
-$log="log";
-$file=fopen($log, 'w');
-file_put_contents($log, $trade_info);
+
+$log = "log";
+$file = fopen($log, 'w');
+file_put_contents($log, $str);
 fclose($file);
 
 //交易資料經 AES 解密後取得 TradeInfo

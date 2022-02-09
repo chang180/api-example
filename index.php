@@ -39,6 +39,9 @@
             <a href="./ewallet_refund/ewallet_refund_example.php">電子錢包退款</a>
         </li>
         <li>
+            <a href="./linepay_refund/linepay_refund_example.php">網路商店 LINE Pay 退款</a>
+        </li>
+        <li>
             <a href="./get_transaction_info/get_transaction_info_example.php">單日交易查詢</a>
         </li>
         <li>
@@ -60,6 +63,6 @@
             <a href="./web_atm/web_atm_example.php">WebATM 串接</a>
         </li>
     </ul>
-    <a href="API.zip" download>下載檔案</a>
+    <a href="api-example.zip" download>下載檔案</a>
 </body>
 </html>
