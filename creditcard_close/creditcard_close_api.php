@@ -11,8 +11,6 @@ $edata1 = bin2hex(openssl_encrypt($data1, "AES-256-CBC", $key, OPENSSL_RAW_DATA,
 
 $hashs = "HashKey=" . $key . "&" . $edata1 . "&HashIV=" . $iv;
 
-$hash = strtoupper(hash("sha256", $hashs));
-
 //組成POST資料
 $post_str = [
     'MerchantID_' => $mid,
@@ -45,9 +43,6 @@ $data1 = http_build_query($_POST);
 //將請求字串加密
 $edata1=bin2hex(openssl_encrypt($data1, "AES-256-CBC", $key, OPENSSL_RAW_DATA, $iv));
 
-//壓碼
-$hashs="HashKey=".$key."&".$edata1."&HashIV=".$iv;
-$hash=strtoupper(hash("sha256",$hashs));
     </pre>
     </fieldset>
     <form action="creditcard_close.php" method="post">

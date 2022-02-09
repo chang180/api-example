@@ -133,9 +133,9 @@ function curl_($curl_str = '', $curl_url)
             //自行撰寫接收交易結果後續程式，將 TokenizedCard 送到後端做幕後授權的參數
             alert('交易成功')
             document.getElementById('content').innerHTML = '交易完成'
-        } else {
+        } else if(typeof e.data.Status != 'undefined') {
             //自行撰寫顯示錯誤訊息
-            alert('交易失敗')
+            alert(e.data.Message)
         }
     });
 </script>
