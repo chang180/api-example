@@ -57,6 +57,9 @@
             <a href="./refund/refund_example.php">非信用卡支付商店訂單退款</a>
         </li>
         <li>
+            <a href="./refund_credit/refund_credit_example.php">信用卡交易轉匯款</a>
+        </li>
+        <li>
             <a href="./report_refund/report_refund_example.php">單日撥款提領明細查詢</a>
         </li>
         <li>

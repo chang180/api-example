@@ -16,5 +16,6 @@
 |/period                |信用卡-定期定額|
 |/query_trade_info      |單筆交易狀態查詢|
 |/refund                |非信用卡支付商店訂單退款|
+|/refund_credit         |信用卡交易轉匯|
 |/report_refund         |單日撥款提領明細查詢|
 |/web_atm               |WebATM 串接|
