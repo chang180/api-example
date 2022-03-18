@@ -46,7 +46,7 @@
                                 </tr>
                                 <tr>
                                     <td>語系(選填):</td>
-                                    <td><input name="語系" maxlength="5"></td>
+                                    <td><input name="LangType" maxlength="5"></td>
                                 </tr>
                                 <tr>
                                     <td>時間戮記</td>

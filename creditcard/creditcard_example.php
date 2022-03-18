@@ -279,7 +279,7 @@
                             </tr>
                             <tr>
                                 <td>Apple Pay payment token:</td>
-                                <td><textarea name="APPLEGPAY" cols="30" rows="10"></textarea><span style="color:red;">※Samsung Pay必填項目</span></td>
+                                <td><textarea name="APPLEPAY" cols="30" rows="10"></textarea><span style="color:red;">※ApplePay必填項目</span></td>
                             </tr>
                             <tr>
                                 <td colspan="2" align="center"><input type="submit" value="參數轉換"></td>
