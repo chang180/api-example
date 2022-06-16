@@ -65,6 +65,9 @@
         <li>
             <a href="./web_atm/web_atm_example.php">WebATM 串接</a>
         </li>
+        <li>
+            <a href="./vacc/vacc_example.php">ATM 轉帳-幕後取號</a>
+        </li>
     </ul>
     <a href="api-example.zip" download>下載檔案</a>
 </body>

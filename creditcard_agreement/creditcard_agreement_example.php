@@ -170,7 +170,7 @@
                                 </tr>
                                 <tr>
                                     <td>回傳格式:</td>
-                                    <td><input name="Pos_" value="JSON" maxlength="5" required><span style="color:red;">※必填</span></td>
+                                    <td><input name="Pos_" value="JSON" maxlength="6" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>商店訂單編號:</td>
