@@ -53,6 +53,7 @@ function curl_($curl_str = '', $curl_url)
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     //execute
     $result = curl_exec($ch);
     $retcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -98,6 +99,7 @@ function curl_($curl_str = '', $curl_url)
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     //execute
     $result = curl_exec($ch);
     $retcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);

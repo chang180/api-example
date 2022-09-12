@@ -5,6 +5,7 @@ $key = $_POST['key'];
 $iv = $_POST['iv'];
 $pos = $_POST['Pos_'];
 $url = $_POST['url'];
+unset($_POST['MerchantID_']);
 unset($_POST['key'], $_POST['iv'], $_POST['Pos'], $_POST['url']);
 $data1 = http_build_query($_POST);
 

@@ -61,6 +61,14 @@
                                     <td><input type="number" name="Amt" value="88" max="9999999999"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
+                                    <td>付款人綁定資料</td>
+                                    <td><input type="text" name="TokenTerm"><span style="color:blue;">※記憶卡號必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>指定付款人信用卡快速結帳必填欄位</td>
+                                    <td><input type="number" name="TokenTermDemand" max="3" maxlength="30"></td>
+                                </tr>
+                                <tr>
                                     <td>信用卡㇐次付清啟用:</td>
                                     <td><input name="CREDIT" type="number" value="1" max="9" required><span style="color:red;">※一次付清必填項目</span></td>
                                 </tr>
@@ -149,6 +157,14 @@
                                     <td><input type="number" name="Amt" value="88" max="9999999999"><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
+                                    <td>付款人綁定資料</td>
+                                    <td><input type="text" name="TokenTerm"><span style="color:blue;">※記憶卡號必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>指定付款人信用卡快速結帳必填欄位</td>
+                                    <td><input type="number" name="TokenTermDemand" max="3" maxlength="30"></td>
+                                </tr>
+                                <tr>
                                     <td>信用卡紅利啟用:</td>
                                     <td><input name="CreditRed" type="number" value="1" max="9" required><span style="color:red;">※信用卡紅利折抵必填項目</span></td>
                                 </tr>
@@ -222,7 +238,7 @@
                                 </tr>
                                 <tr>
                                     <td>時間戮記:</td>
-                                    <td><input name="TimeStamp" value="<?= time(); ?>" maxlength="50" required readonly><span style="color:red;">※必填</span></td>
+                                    <td><input name="TimeStamp" value="<?= time(); ?>" maxlength="50" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>回傳格式:</td>
@@ -235,6 +251,14 @@
                                 <tr>
                                     <td>訂單金額:</td>
                                     <td><input type="number" name="Amt" value="88" max="9999999999"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>付款人綁定資料</td>
+                                    <td><input type="text" name="TokenTerm"><span style="color:blue;">※記憶卡號必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>指定付款人信用卡快速結帳必填欄位</td>
+                                    <td><input type="number" name="TokenTermDemand" max="3" maxlength="30"></td>
                                 </tr>
                                 <tr>
                                     <td>信用卡分期付款啟用:</td>
@@ -1405,6 +1429,14 @@
                                     <td><input type="number" name="CREDIT" value="1" max="9"><span style="color:red;">※取貨不付款至少需啟用一種支付方式</span></td>
                                 </tr>
                                 <tr>
+                                    <td>付款人綁定資料</td>
+                                    <td><input type="text" name="TokenTerm"><span style="color:blue;">※記憶卡號必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>指定付款人信用卡快速結帳必填欄位</td>
+                                    <td><input type="number" name="TokenTermDemand" max="3" maxlength="30"></td>
+                                </tr>
+                                <tr>
                                     <td>物流啟用:</td>
                                     <td><input type="number" name="CVSCOM" value="3" max="9"><span style="color:red;">※物流啟用必填</span></td>
                                 </tr>
@@ -1495,6 +1527,14 @@
                                 <tr>
                                     <td>訂單金額:</td>
                                     <td><input type="number" name="Amt" value="88" max="9999999999"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>付款人綁定資料</td>
+                                    <td><input type="text" name="TokenTerm"><span style="color:blue;">※記憶卡號必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>指定付款人信用卡快速結帳必填欄位</td>
+                                    <td><input type="number" name="TokenTermDemand" max="3" maxlength="30"></td>
                                 </tr>
                                 <tr>
                                     <td>支付完成返回商店網址:(選填)</td>
