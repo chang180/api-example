@@ -45,7 +45,7 @@
             <a href="./get_transaction_info/get_transaction_info_example.php">單日交易查詢</a>
         </li>
         <li>
-            <a href="./mpg/mpg_example.php">多功能收款 MPG</a>
+            <a href="./MPG/mpg_example.php">多功能收款 MPG</a>
         </li>
         <li>
             <a href="./period/period_example.php">信用卡-定期定額</a>

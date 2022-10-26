@@ -1,4 +1,5 @@
 <?php
+//參數
 $parameter = $_POST['TradeInfo'];
 
 $key = ''; //請輸入key
