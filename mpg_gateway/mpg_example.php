@@ -46,7 +46,7 @@
                                 </tr>
                                 <tr>
                                     <td>時間戮記:</td>
-                                    <td><input name="TimeStamp" value="<?= time(); ?>" maxlength="50" required readonly><span style="color:red;">※必填</span></td>
+                                    <td><input name="TimeStamp" value="<?= time(); ?>" maxlength="50" required><span style="color:red;">※必填</span></td>
                                 </tr>
                                 <tr>
                                     <td>回傳格式:</td>
@@ -71,6 +71,10 @@
                                 <tr>
                                     <td>信用卡㇐次付清啟用:</td>
                                     <td><input name="CREDIT" type="number" value="1" max="9" required><span style="color:red;">※一次付清必填項目</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TWQR:</td>
+                                    <td><input name="TWQR" type="number" value="1" max="9" required><span style="color:red;">※TWQR必填項目</span></td>
                                 </tr>
                                 <tr>
                                     <td>支付完成返回商店網址:(選填)</td>
@@ -719,6 +723,194 @@
                                 <tr>
                                     <td>WEBATM 啟用:</td>
                                     <td><input name="WEBATM" type="number" value="1" max="9" required><span style="color:red;">※WebATM必填項目</span></td>
+                                </tr>
+                                <tr>
+                                    <td>支付完成返回商店網址:(選填)</td>
+                                    <td><input name="ReturnURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>支付通知網址:(選填)</td>
+                                    <td><input name="NotifyURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>商店取號網址:(選填)</td>
+                                    <td><input name="CustomerURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>返回商店網址:(選填)</td>
+                                    <td><input name="ClientBackURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>商品資訊:</td>
+                                    <td><input name="ItemDesc" value="商品一批" maxlength="50" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>付款人電子信箱:</td>
+                                    <td><input name="Email" maxlength="50" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>藍新金流會員:</td>
+                                    <td><input name="LoginType" type="number" value="0" max="9" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center"><input type="submit" value="參數轉換"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <a href="###" class="payment">ATM轉帳</a>
+                <div class="payment-content" hidden>
+                    <!-- ATM轉帳 -->
+                    <form action="mpg_api.php" method="post">
+                        <fieldset>
+                            <legend>參數輸入</legend>
+                            <table border="1">
+                                <tr>
+                                    <td>API網址：</td>
+                                    <td><input name="url" value="https://ccore.newebpay.com/MPG/mpg_gateway" size="60" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>商店代號:</td>
+                                    <td><input name="MerchantID" maxlength="15" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>key:</td>
+                                    <td><input name="key" size="32" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>iv:</td>
+                                    <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>加密模式(選填):</td>
+                                    <td><input name="EncryptType" type="number" max="9"></td>
+                                </tr>
+                                <tr>
+                                    <td>時間戮記:</td>
+                                    <td><input name="TimeStamp" value="<?= time(); ?>" maxlength="50" required readonly><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>回傳格式:</td>
+                                    <td><input name="RespondType" value="JSON" maxlength="5" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>商店訂單編號:</td>
+                                    <td><input name="MerchantOrderNo" value="example<?= time(); ?>" maxlength="30" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>訂單金額:</td>
+                                    <td><input type="number" name="Amt" value="88" max="9999999999"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ATM 轉帳啟用:</td>
+                                    <td><input name="VACC" type="number" value="1" max="9" required><span style="color:red;">※ATM轉帳必填項目</span></td>
+                                </tr>
+                                <tr>
+                                    <td>支付完成返回商店網址:(選填)</td>
+                                    <td><input name="ReturnURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>支付通知網址:(選填)</td>
+                                    <td><input name="NotifyURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>商店取號網址:(選填)</td>
+                                    <td><input name="CustomerURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>返回商店網址:(選填)</td>
+                                    <td><input name="ClientBackURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>商品資訊:</td>
+                                    <td><input name="ItemDesc" value="商品一批" maxlength="50" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>付款人電子信箱:</td>
+                                    <td><input name="Email" maxlength="50" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>藍新金流會員:</td>
+                                    <td><input name="LoginType" type="number" value="0" max="9" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center"><input type="submit" value="參數轉換"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <a href="###" class="payment">智慧ATM2.0</a>
+                <div class="payment-content" hidden>
+                    <!-- ATM轉帳 -->
+                    <form action="mpg_api.php" method="post">
+                        <fieldset>
+                            <legend>參數輸入</legend>
+                            <table border="1">
+                                <tr>
+                                    <td>API網址：</td>
+                                    <td><input name="url" value="https://ccore.newebpay.com/MPG/mpg_gateway" size="60" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>商店代號:</td>
+                                    <td><input name="MerchantID" maxlength="15" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>key:</td>
+                                    <td><input name="key" size="32" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>iv:</td>
+                                    <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.3" maxlength="5"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>加密模式(選填):</td>
+                                    <td><input name="EncryptType" type="number" max="9"></td>
+                                </tr>
+                                <tr>
+                                    <td>時間戮記:</td>
+                                    <td><input name="TimeStamp" value="<?= time(); ?>" maxlength="50" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>回傳格式:</td>
+                                    <td><input name="RespondType" value="JSON" maxlength="5" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>商店訂單編號:</td>
+                                    <td><input name="MerchantOrderNo" value="example<?= time(); ?>" maxlength="30" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>訂單金額:</td>
+                                    <td><input type="number" name="Amt" value="88" max="9999999999"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>智慧ATM2.0啟用:</td>
+                                    <td><input name="VACC" type="number" value="1" max="9" required><span style="color:red;">※ATM轉帳必填項目</span></td>
+                                </tr>
+                                <tr>
+                                    <td>智慧ATM2.0 轉帳種類:</td>
+                                    <td><input name="SourceType" value="4" max="9" required><span style="color:red;">※ATM轉帳必填項目</span></td>
+                                </tr>
+                                <tr>
+                                    <td>智慧ATM2.0 轉帳銀行代號:</td>
+                                    <td><input name="SourceBankId" type="number" value=""><span style="color:blue;">※ATM轉帳部份必填項目</span></td>
+                                </tr>
+                                <tr>
+                                    <td>智慧ATM2.0 轉帳帳號:</td>
+                                    <td><input name="SourceAccountNo" type="number" value=""><span style="color:blue;">※ATM轉帳部份必填項目</span></td>
                                 </tr>
                                 <tr>
                                     <td>支付完成返回商店網址:(選填)</td>
@@ -1507,6 +1699,106 @@
                                 <tr>
                                     <td>串接程式版本:</td>
                                     <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>加密模式(選填):</td>
+                                    <td><input name="EncryptType" type="number" max="9"></td>
+                                </tr>
+                                <tr>
+                                    <td>時間戮記</td>
+                                    <td><input name="TimeStamp" value="<?= time(); ?>" maxlength="50" required readonly><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>回傳格式</td>
+                                    <td><input name="RespondType" value="JSON" maxlength="5" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>商店訂單編號:</td>
+                                    <td><input name="MerchantOrderNo" value="example<?= time(); ?>" maxlength="30" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>訂單金額:</td>
+                                    <td><input type="number" name="Amt" value="88" max="9999999999"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>付款人綁定資料</td>
+                                    <td><input type="text" name="TokenTerm"><span style="color:blue;">※記憶卡號必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>指定付款人信用卡快速結帳必填欄位</td>
+                                    <td><input type="number" name="TokenTermDemand" max="3" maxlength="30"></td>
+                                </tr>
+                                <tr>
+                                    <td>支付完成返回商店網址:(選填)</td>
+                                    <td><input name="ReturnURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>支付通知網址:(選填)</td>
+                                    <td><input name="NotifyURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>商店取號網址:(選填)</td>
+                                    <td><input name="CustomerURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>返回商店網址:(選填)</td>
+                                    <td><input name="ClientBackURL" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td>商品資訊:</td>
+                                    <td><input name="ItemDesc" value="商品一批" maxlength="50" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>付款人電子信箱:</td>
+                                    <td><input name="Email" maxlength="50" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>藍新金流會員:</td>
+                                    <td><input name="LoginType" type="number" value="0" max="9" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center"><input type="submit" value="參數轉換"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <a href="###" class="payment">Visa風險系統</a>
+                <div class="payment-content" hidden>
+                    <!-- Visa風險系統 -->
+                    <form action="mpg_api.php" method="post">
+                        <fieldset>
+                            <legend>參數輸入</legend>
+                            <table border="1">
+                                <tr>
+                                    <td>API網址：</td>
+                                    <td><input name="url" value="https://ccore.newebpay.com/MPG/mpg_gateway" size="60" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>商店代號:</td>
+                                    <td><input name="MerchantID" maxlength="15" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>key:</td>
+                                    <td><input name="key" size="32" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>iv:</td>
+                                    <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>串接程式版本:</td>
+                                    <td><input name="Version" value="2.0" maxlength="5"><span style="color:red;">※必填</span></td>
+                                </tr>
+                                <tr>
+                                    <td>風險判斷:</td>
+                                    <td><input name="RiskType" value="1" maxlength="3"><span style="color:red;">※必填，1=本交易啟用DM機制</span></td>
+                                </tr>
+                                <tr>
+                                    <td>RiskType=1此參數才有作用</td>
+                                    <td><textarea name="RiskDefinedInfo" cols="60" rows="10" placeholder='{"Gamename":"吞食天地","GuestMember":"Guest","UserID":"aaabbcc"}'></textarea></td>
                                 </tr>
                                 <tr>
                                     <td>加密模式(選填):</td>

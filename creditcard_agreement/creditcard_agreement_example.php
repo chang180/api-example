@@ -113,6 +113,10 @@
                                     <td><input name="TokenLife" maxlength="4"></td>
                                 </tr>
                                 <tr>
+                                    <td>信用卡之有效日期(必填，格式為yymm):</td>
+                                    <td><input name="CardExpire" maxlength="4"></td>
+                                </tr>
+                                <tr>
                                     <td>是否為美國運通卡(選填):</td>
                                     <td><input name="CardAE" type="number" max="9"></td>
                                 </tr>
@@ -249,6 +253,10 @@
                                     <td><input name="TokenLife" type="number" max="9999"></td>
                                 </tr>
                                 <tr>
+                                    <td>信用卡之有效日期(必填，格式為yymm):</td>
+                                    <td><input name="CardExpire" maxlength="4"></td>
+                                </tr>
+                                <tr>
                                     <td colspan="2" align="center"><input type="submit" value="交易測試"></td>
                                 </tr>
                             </table>
@@ -331,6 +339,10 @@
                                 <tr>
                                     <td>約定信用卡付款之有效日期(選填，格式為yymm):</td>
                                     <td><input name="TokenLife" type="number" max="9999"></td>
+                                </tr>
+                                <tr>
+                                    <td>信用卡之有效日期(必填，格式為yymm):</td>
+                                    <td><input name="CardExpire" maxlength="4"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" align="center"><input type="submit" value="交易測試"></td>

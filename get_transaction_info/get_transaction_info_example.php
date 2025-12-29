@@ -16,19 +16,19 @@
             <table border="1">
                 <tr>
                     <td>API網址：</td>
-                    <td><input name="url" value="https://ccore.newebpay.com/PerDayTransInfo/get_transaction_info" size="60" required><span style="color:red;">※必填</span></td>
+                    <td><input name="url" value="https://lcore.newebpay.com/PerDayTransInfo/get_transaction_info" size="60" required><span style="color:red;">※必填</span></td>
                 </tr>
                 <tr>
                     <td>商店代號:</td>
-                    <td><input name="MerchantID" maxlength="15" required><span style="color:red;">※必填</span></td>
+                    <td><input name="MerchantID" maxlength="15" value="MS35506950" required><span style="color:red;">※必填</span></td>
                 </tr>
                 <tr>
                     <td>key:</td>
-                    <td><input name="key" size="32" required><span style="color:red;">※必填</span></td>
+                    <td><input name="key" size="32" value="YuPYlFmo8oaxSv8ttGzNZKFr7rkUBu25" required><span style="color:red;">※必填</span></td>
                 </tr>
                 <tr>
                     <td>iv:</td>
-                    <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
+                    <td><input name="iv" minlength="16" maxlength="16" value="Sx5g234hVXNFoHKT" required><span style="color:red;">※必填</span></td>
                 </tr>
                 </tr>
                     <td>支付方式 :</td>

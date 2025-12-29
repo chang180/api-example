@@ -229,6 +229,10 @@
                                 <td>商店代號:</td>
                                 <td><input name="MerchantID_" maxlength="15" required><span style="color:red;">※必填</span></td>
                             </tr>
+                            <!-- <tr>
+                                <td>Exp</td>
+                                <td><input name="Exp" maxlength="15" required><span style="color:red;">※必填</span></td>
+                            </tr> -->
                             <tr>
                                 <td>key:</td>
                                 <td><input name="key" size="32" required><span style="color:red;">※必填</span></td>
@@ -443,7 +447,107 @@
                 </form>
         </li>
     </ul>
-    
+    <ul>
+        <li>
+            <a href="#" class="payment">Visa風險系統</a>
+            <div class="payment-content" hidden>
+                <!-- Visa風險系統 -->
+                <form action="creditcard_api.php" method="post">
+                    <fieldset>
+                        <legend>參數輸入</legend>
+                        <table border="1">
+                            <tr>
+                                <td>API網址：</td>
+                                <td><input name="url" value="https://ccore.newebpay.com/API/CreditCard" size="60" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>商店代號:</td>
+                                <td><input name="MerchantID_" maxlength="15" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>key:</td>
+                                <td><input name="key" size="32" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>iv:</td>
+                                <td><input name="iv" minlength="16" maxlength="16" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>回傳格式:</td>
+                                <td><input name="Pos_" value="JSON" maxlength="5" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>版本號:</td>
+                                <td><input name="Version" value="1.2" maxlength="3"><span style="color:red;">※必填，請帶1.2</span></td>
+                            </tr>
+                            <tr>
+                                <td>風險判斷:</td>
+                                <td><input name="FraudDetect" value="1" maxlength="3"><span style="color:red;">※必填，1=本交易啟用DM機制</span></td>
+                            </tr>
+                            <tr>
+                                <td>FraudDetect=1此參數才有作用</td>
+                                <td><textarea name="RiskDefinedInfo" cols="60" rows="10" placeholder='{"Gamename":"吞食天地","GuestMember":"Guest","UserID":"aaabbcc"}'></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>TimeStamp:</td>
+                                <td><input name="TimeStamp" value="<?= time(); ?>" maxlength="50" required readonly><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>3D交易:</td>
+                                <td><input name="P3D" value="0" maxlength="1" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>支付通知網址:</td>
+                                <td><input name="NotifyURL" maxlength="50"><span style="color:blue;">※P3D為1時必填</td>
+                            </tr>
+                            <tr>
+                                <td>支付完成返回商店網址:</td>
+                                <td><input name="ReturnURL" maxlength="50"><span style="color:blue;">※P3D為1時必填</td>
+                            </tr>
+                            <tr>
+                                <td>商店訂單編號:</td>
+                                <td><input name="MerchantOrderNo" value="example<?= time(); ?>" maxlength="30" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>訂單金額:</td>
+                                <td><input type="number" name="Amt" value="88" max="9999999999"><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>商品描述 :</td>
+                                <td><input name="ProdDesc" value="商品一批" maxlength="50"><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>付款人電子信箱:</td>
+                                <td><input name="PayerEmail" type="email" value="" maxlength="50" required><span style="color:red;">※必填</span></td>
+                            </tr>
+                            <tr>
+                                <td>信用卡分期付款啟用:(選填)</td>
+                                <td><input name="Inst" type="number" value="" max="99"></td>
+                            </tr>
+                            <tr>
+                                <td>美國運通卡啟用(選填):</td>
+                                <td><input name="CardAE" type="number" value="" max="9"></td>
+                            </tr>
+                            <tr>
+                                <td>信用卡卡號:</td>
+                                <td><input name="CardNo" minlength="15" maxlength="16" value="4000221111111111" required><span style="color:red;">※信用卡支付必填項目</span></td>
+                            </tr>
+                            <tr>
+                                <td>信用卡到期日(yymm):</td>
+                                <td><input name="Exp" type="number" value="2712" max="9999" required><span style="color:red;">※信用卡支付必填項目</span></td>
+                            </tr>
+                            <tr>
+                                <td>信用卡檢查碼:</td>
+                                <td><input name="CVC" type="number" value="123" max="9999" required><span style="color:red;">※信用卡支付必填項目</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center"><input type="submit" value="參數轉換"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+        </li>
+    </ul>
 </body>
 
 <script>

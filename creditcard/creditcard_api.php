@@ -7,6 +7,8 @@ $pos = $_POST['Pos_'];
 $url = $_POST['url'];
 unset($_POST['MerchantID_']);
 unset($_POST['key'], $_POST['iv'], $_POST['Pos'], $_POST['url']);
+$test = $_POST;
+$_POST['APPLEPAY'] = $_POST['APPLEPAY'];
 $data1 = http_build_query($_POST);
 
 $edata1 = bin2hex(openssl_encrypt($data1, "AES-256-CBC", $key, OPENSSL_RAW_DATA, $iv));
